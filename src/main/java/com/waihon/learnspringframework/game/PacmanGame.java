@@ -1,8 +1,9 @@
 package com.waihon.learnspringframework.game;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class PacmanGame implements GamingConsole {
 
     public void up() {
