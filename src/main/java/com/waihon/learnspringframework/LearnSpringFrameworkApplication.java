@@ -1,5 +1,6 @@
 package com.waihon.learnspringframework;
 
+import com.waihon.learnspringframework.enterprise.example.MyWebController;
 import com.waihon.learnspringframework.game.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -21,5 +22,8 @@ public class LearnSpringFrameworkApplication {
 		GameRunner runner = context.getBean(GameRunner.class);
 
 		runner.run();
+
+		MyWebController controller = context.getBean(MyWebController.class);
+		System.out.println((controller.returnValueFromBusinessService()));
 	}
 }
