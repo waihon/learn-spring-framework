@@ -7,6 +7,7 @@ import java.util.List;
 
 @Component
 public class BusinessService {
+    // Field dependency injection using reflection
     @Autowired
     private DataService dataService;
 

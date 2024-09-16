@@ -6,9 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class GameRunner {
 
-    @Autowired
+    // @Autowired is optional when using constructor-based dependency injection
     private GamingConsole game;
 
+    // Constructor-based dependency injection - recommended among 3 types of injection
     public GameRunner(GamingConsole game) {
         this.game = game;
     }
